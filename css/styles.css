@@ -1,0 +1,83 @@
+/*Applies this property to all the elements of the file */
+*{
+    box-sizing: border-box;
+}
+
+/* Changing font to all the elements of body */
+body{
+    font-family: Tahoma, Geneva, sans-serif
+}
+
+/* Applying properties to the h1 element */
+h1{
+    margin-bottom: 25px;    /*space between h1 and any element below*/
+    text-align: center;
+}
+
+/* This is applied to the header class */
+.header{
+    text-align: center;
+    border: 3px solid black;
+    width: 150px;
+    height: 40px;
+    font-size: 24px;
+    padding: 0px 5px 5px 5px;   /*space between content and border */
+    float: right;   /*position*/   
+    margin-top: 0px;    /*position*/
+    font-weight: bold;
+    position: relative; /*position*/
+}
+
+/* This is applied to the content class */
+.content{
+    background-color: darkolivegreen;
+    border: 3px solid black;
+    font-size: 24px;
+    padding: 40px 10px 20px 10px;   /*space between content and border, here i don't specify the w or h of the box*/
+
+}
+
+.name1{
+    background-color: darkkhaki;
+}
+
+.name2{
+    background-color: forestgreen;
+}
+
+.name3{
+    background-color: firebrick;
+}
+
+/** Larges devices **/
+@media (min-width: 992px){
+    .col-lg-4{
+        float: left;
+        padding: 10px 25px 0px 25px;
+        width: 33.33%
+    }
+}
+
+/** Medium devices only **/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-4, .col-md-6, .col-md-12 {
+      float: left;
+      padding: 10px 25px 0px 25px;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-12 {
+      width: 100%;
+    }
+}
+
+/**Small devices only**/  
+@media (max-width: 767px) {
+    .col-sm-12 {
+      float: left;
+      padding: 10px 40px 0px 40px;
+      width: 100%;
+    }
+}
+
